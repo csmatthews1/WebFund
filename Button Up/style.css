@@ -1,0 +1,32 @@
+div {
+    margin: 20px;
+}
+#search {
+    border-color:darkcyan;
+    color:darkcyan;
+    font-weight:bold;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+}
+#plus {
+    border-color:aqua;
+    background-color:aqua;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+#create {
+    border-color:black;
+    background-color:royalblue;
+    color:white;
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    box-shadow: 3px 3px 1px black;
+
+}

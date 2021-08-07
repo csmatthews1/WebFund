@@ -1,0 +1,34 @@
+.container {
+    background-color:azure;
+    border-top-style: solid;
+    padding: 20px;
+}
+h1 {
+    color:darkblue;
+    font-family:sans-serif;
+    text-align: center;
+    line-height: 20px;
+}
+img.octocat {
+    height: 200px;
+}
+.row {
+    margin:20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:space-around;
+}
+#blue {
+    background-color:cornflowerblue;
+}
+#pink {
+    background-color:plum;
+}
+#white {
+    background-color:white;
+}
+p {
+    text-align: center;
+    color:dimgray;
+}

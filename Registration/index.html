@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .input {
+                padding-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Registration Form</h1>
+        
+        <div class="input">
+            <label for="normal">First Name: * </label>
+            <input name='first_name' type="text"></br>
+        </div>
+        <div class="input">
+            <label for="normal">Last Name: * </label>
+            <input name='last_name' type="text"></br>
+        </div>
+        <div class="input">
+            <label for="normal">Email Address: * </label>
+            <input name='Email_address' type="text">
+        </div>
+        <div class="input">
+            <label for="normal">Password: * </label>
+            <input name='password' type="text">
+        </div>
+        <div class="input">
+            <label for="normal">Confirm Password: * </label>
+            <input name='confirm_password' type="text">
+        </div>
+        <div class="input">
+            <label for="normal">Birthday: </label>
+            <input name='birthday' type="date">
+        </div>
+        <div>
+            <label for="normal">Gender: </label>
+        </div>
+        <div class="input">
+            <input name='male' type="radio">
+            <label for="normal">Male </label>
+            <input name='female' type="radio">
+            <label for="normal">Female </label>
+            <input name='no_answer' type="radio">
+            <label for="normal">I prefer not to answer </label>
+        </div>
+        <div>
+            <label for="normal">A short description about myself: </label>
+        </div>
+        <div class="input">
+            <textarea name="description" rows= "4" cols="50"></textarea>
+        </div>
+        <div class="input">
+            <label for="normal">Favorite Language: </label>
+            <select name="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C">C</option>
+                <option value="Basic">Basic</option>
+                <option value="Portuguese">Portuguese</option>
+            </select>
+        </div>
+        <div class="input">
+            <input type="checkbox" name="receive_emails">
+            <label for="normal">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div class="input">
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            <label for="normal">* Indicates a required field </label>
+        </div>
+    </body>
+</html>

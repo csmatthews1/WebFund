@@ -1,0 +1,161 @@
+* {
+    font-family:sans-serif;
+}
+img
+{
+    padding: 0 10px 0 0;
+}
+p {
+    margin: 2px;
+    font-size: 10pt;
+}
+h4{
+    padding:0;
+    margin:0;
+}
+h2 {
+    margin:12px 0;
+}
+h3 {
+    margin: 12px 0;
+    font-weight:400;
+}
+h5 {
+    margin:12px 0;
+}
+#topbar {
+    background-color:black;
+    color:white;
+    height:50px;
+    width:80%%;
+    display:flex;
+    justify-content:space-between;
+    padding-left: 20px;
+}
+
+#menu {
+    display:flex;
+}
+.nav-links {
+    display:flex;
+    width:300px;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.nav-links a {
+    font-size: 11pt;
+    color: white;
+    text-decoration:none;
+}
+
+ul {
+    list-style-type:none;
+}
+#signout {
+    background-color:deepskyblue;
+    color:white;
+    margin: 10px 20px;
+}
+.active {
+    font-weight:bolder;
+}
+
+#main {
+    width:95%;
+    display:flex;
+    padding: 20px;
+}
+#profile {
+    flex: 2;
+    min-width: 350px;
+    margin-right:20px;
+}
+.info a{
+    font-size: 10pt;
+}
+.avatar {
+    width: 75px;
+    border-radius:50%;
+}
+#connections {
+    flex: 1;
+}
+
+.connectbox {
+    border: 2px solid gray;
+    margin-bottom:20px;
+}
+.card {
+    border: 2px solid gray;
+    margin-bottom:20px;
+}
+#bluetop {
+    height: 75px;
+    background-color:darkcyan;
+}
+.info
+{
+    padding: 20px;
+}
+.img_text
+{
+    display: flex;
+    margin: 5px;
+}
+.thumbnail {
+    width: 30px;
+}
+.btn_img {
+    width: 20px;
+}
+.contitle {
+    display:flex;
+    background-color:black;
+}
+.title {
+    background-color:black;
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 30px;
+}
+.graycircle {
+    margin-top:8px;
+    margin-left:10px;
+    padding: 3px;
+    text-align: center;
+
+    height:20px;
+    min-width:20px;
+    background-color:lightgrey;
+    color: black;
+    border-radius:50%
+}
+.graytext {
+    margin-top: -10px;
+    margin-bottom:10px;
+    font-size:11pt;
+    color:dimgrey;
+}
+.reqentry {
+    display:flex;
+    justify-content:space-between;
+    margin:20px;
+}
+.reqname {
+    display: flex;
+}
+.reqopt {
+    margin-top:10px;
+}
+
+#user {
+    position:relative;
+    top: -220px;
+    left: 20px;
+}
+#viewmore {
+    font-size:10pt;
+    padding:20px;
+    border-top: 2px solid gray;
+}
