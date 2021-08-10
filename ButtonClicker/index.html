@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <h1 class="nav-title">Dojonary</h1>
+        <input type="text" id="search" value="Search">
+        <button id="login" onclick="login(this)">Login</button>
+    </div>
+    <div class="container">
+        <div class="col-2">
+            <div class="entry">
+                <div class="col-1">
+                    <h2 class="word">ninja</h2>
+                    <p class="speech"><i>noun</i></p>
+                    <p class="Plural">Plural: <i>ninjas</i></p>
+                    <br>
+                    <button class="likes" onclick="like()">13 likes</button>
+                </div>
+                <div class="col-3">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjitsu</a></p>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="col-1">
+                    <h2 class="word">ninja</h2>
+                    <p class="speech"><i>noun</i></p>
+                    <p class="Plural">Plural: <i>ninjas</i></p>
+                    <br>
+                    <button class="likes" onclick="like()">37 likes</button>
+                </div>
+                <div class="col-3">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="define">
+                <h3>dojonary is defined by <b>YOU</b></h3>
+                <br>
+                <button id="add" onclick="adddef(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
