@@ -33,7 +33,7 @@
                     <p id="slogan">Master of shadows and the Internet!</p>
                     <div class="img_text">
                         <img height="15" src="icons/gear.png" alt="gear">
-                        <a href="#">edit profile</a>
+                        <a href="#" onclick="editprofile()">edit profile</a>
                     </div>
                 </div>
                 <div id="user">
@@ -52,33 +52,33 @@
         <div id="connections">
             <div class="connectbox">
                 <div class = "contitle">
-                    <div class="graycircle">2</div>
+                    <div class="graycircle" id="numRequests">2</div>
                     <div class= "title">Connection Requests</div>
                 </div>
-                <div class = "reqentry">
+                <div class = "reqentry" id="entry1">
                     <div class="reqname">
                         <img class="thumbnail" src="images/todd-s.jpg" alt="profile pic">
                         <h5>Todd E</h5>
                     </div>
                     <div class = reqopt>
-                        <img class="btn_img" src="icons/accept-circle.png" alt="accept">
-                        <img class="btn_img" src="icons/close-circle.png" alt="close">
+                        <img class="btn_img" onclick="addConnection(1)" src="icons/accept-circle.png" alt="accept">
+                        <img class="btn_img" onclick="addConnection(1)" src="icons/close-circle.png" alt="close">
                     </div>
                 </div>
-                <div class = "reqentry">
+                <div class = "reqentry" id="entry2">
                     <div class="reqname">
                         <img class="thumbnail" src="images/phil-s.jpg" alt="profile pic">
                         <h5>Phil K</h5>
                     </div>
                     <div class = reqopt>
-                        <img class="btn_img" src="icons/accept-circle.png" alt="accept">
-                        <img class="btn_img" src="icons/close-circle.png" alt="close">
+                        <img class="btn_img" onclick="addConnection(2)" src="icons/accept-circle.png" alt="accept">
+                        <img class="btn_img" onclick="denyConnection(2)" src="icons/close-circle.png" alt="close">
                     </div>
                 </div>
             </div>
             <div class="connectbox">
                 <div class = "contitle">
-                    <div class="graycircle">500+</div>
+                    <div class="graycircle" id="numConnections">418</div>
                     <div class= "title">Your Connections</div>
                 </div>
                     <div class="reqname">
@@ -102,5 +102,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
