@@ -1,0 +1,50 @@
+* {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#top {
+    background-color:black;
+    color:white;
+    margin: 0 40px;
+    padding: 10px;
+}
+
+#flex-container {
+    margin: 20px 40px;
+    display: flex;
+}
+#col1 {
+    flex: 1;
+    margin: 0 20px;
+}
+#col2 {
+
+    flex: 3;
+    margin: 0 20px;
+}
+#feed-title {
+    margin: 0 40px;
+}
+.profile {
+    border: 2px solid black;
+    padding: 40px;
+    text-align:center;
+}
+.comment-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.comment-head {
+    display:flex;
+}
+.like-btn {
+    padding: 2px 10px;
+    background-color:goldenrod;
+    box-shadow: 2px 2px black;
+}
+.likes {
+    vertical-align:center;
+    padding: 5px 50px;
+}
