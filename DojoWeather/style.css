@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.top {
+    background-color:cornflowerblue;
+    color: white;
+    padding: 5px 0;
+    display:flex;
+}
+.menuBar {
+    width: 80%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cities {
+    display:flex;
+    width: 350px;
+    justify-content:space-evenly;
+    justify-self:right;
+    align-items:center;
+}
+#cityBar {
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 80%;
+    margin: 20px auto;
+    border-top: 2px solid black;
+}
+.weather {
+    background-color: lightgray;
+    margin: 0 20px 0 0;
+    padding: 40px;
+    text-align:center;
+}
+.weather img {
+    border-radius:50%;
+}
+.highlow {
+    display: flex;
+    justify-content:space-between;
+    font-weight:bold;
+}
+.high {
+    color: red;
+}
+.low {
+    color: blue;
+}
+#modal-dialog {
+    position:fixed;
+    background-color:lightgray;
+    padding: 20px;
+    display:flex;
+    width:80%;
+    left: 7%;
+    bottom:20px;
+    border: 2px solid black;
+
+    align-items:center;
+}
+#cookie {
+    padding: 20px;
+}
+#message {
+    flex:4;
+}
+#accept {
+    margin: 30px;
+    width: 100px;
+    height: 30px;
+    background-color:cornflowerblue;
+    box-shadow: 2px 2px 2px black;
+}

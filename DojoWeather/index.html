@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="menuBar">
+        <h1 id="pageTitle">DojoWeather</h1>
+            <div class="cities">
+                <h3 id="city1" onclick="changeCity()">Burbank</h3>
+                <h3 id="city2" onclick="changeCity()">Chicago</h3>
+                <h3 id="city3" onclick="changeCity()">Dallas</h3>
+            </div>
+        </div>
+    </div>
+    <div id="cityBar">
+        <h2>San Jose</h2>
+        <div>
+            <label>Show Temperature in: </label>
+            <select onchange="changeTemp(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="weather" id="today">
+            <h2>Today</h2><br>
+            <img src="assets/some_rain.png" width="100" alt="rain"><br><br>
+            <p>some rain</p><br><br>
+            <div class="highlow">
+                <p class="high">24°</p>
+                <p class="low">18°</p>
+            </div>
+        </div>
+        <div class="weather" id="tomorrow">
+            <h2>Tomorrow</h2><br>
+            <img src="assets/some_sun.png" width="100" alt="sun"><br><br>
+            <p>some sun</p><br><br>
+            <div class="highlow">
+                <p class="high">27°</p>
+                <p class="low">19°</p>
+            </div>
+        </div>
+        <div class="weather" id="friday">
+            <h2>Friday</h2><br>
+            <img src="assets/some_clouds.png" width="100" alt="clouds"><br><br>
+            <p>some clouds</p><br><br>
+            <div class="highlow">
+                <p class="high">21°</p>
+                <p class="low">16°</p>
+            </div>
+        </div>
+        <div class="weather" id="saturday">
+            <h2>Saturday</h2><br>
+            <img src="assets/some_sun.png" width="100" alt="sun"><br><br>
+            <p>some sun</p><br><br>
+            <div class="highlow">
+                <p class="high">26°</p>
+                <p class="low">11°</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal-dialog">
+        <img id="cookie" src="assets/cookie.png" alt="cookie" width="50">
+        <div id="message">
+            <h4>Stop! Cookie Time</h4>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read More...</a></p>
+        </div>
+        <button id="accept" onclick="accept()">I Accept</button>
+    </div>
+    <script src=script.js></script>
+</body>
+</html>
