@@ -1,5 +1,3 @@
-var sequence = [4, 2.5, 1, -0.5, -2, -3.5];
-
 function printOdds() {
 
     for (let i=1; i < 20; i=i+2) {
@@ -16,8 +14,11 @@ function decMult3 () {
 }
 
 function printSeq () {
-    for (let i=0; i < sequence.length; i++) {
-        console.log(sequence[i]);
+    var value = 4;
+
+    for (let i=0; i < 6; i++) {
+        console.log(value);
+        value -= 1.5;
     }
 }
 
