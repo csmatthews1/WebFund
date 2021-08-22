@@ -1,0 +1,3 @@
+Basic Calculator
+
+This page uses basic HTML,CSS and Javascript to replicate a basic calculator on a webpage.  Calculations can be done with the form, Number (operator) Number (equals), or with stacked operators, Number (operator) Number (operator) Number...
