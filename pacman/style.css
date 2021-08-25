@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:sans-serif;
+    background-color:black;
+}
+#start-dialog {
+    margin: 50px auto;
+    width: 400px;
+    height: 200px;
+    background-color: lightgray;
+    text-align: center;
+    border: 2px solid black;
+}
+#game {
+    display:none;
+}
+#game img {
+    height:160px;
+}
+#game h1 {
+    color: white;
+}
+#start-dialog p {
+    margin: 50px;
+    font-size: 1em;
+}
+#start-dialog button {
+    padding: 20px;
+    box-shadow: 2px 2px black;
+}
+.wall {	
+    background-color:  #2020f9;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+}
+.row {
+    line-height: 0;
+}
+.coin {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/coin.png");
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.power {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/power2.gif");
+
+}
+.onigiri {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("onigiri.png");
+    background-size: contain;
+
+}
+.blank {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+}
+#pinky {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/pinky.gif");
+    background-size: contain;
+    position: absolute;
+    left: 360px;
+    top: 480px;
+}
+#inky {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/inky.gif");
+    background-size: contain;
+    position: absolute;
+    left: 320px;
+    top: 480px;
+}
+#blinky {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/blinky.gif");
+    background-size: contain;
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+#clyde {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/clyde.gif");
+    background-size: contain;
+    position: absolute;
+    left: 280px;
+    top: 480px;
+}
+#status-bar {
+    width: 680px;
+    display: flex;
+    justify-content:space-between;
+}
+#pacman {
+    background-color:  black;
+    height:  40px;
+    width:   40px;
+    display:  inline-block;
+    background-image:  url("img/pacman-r.gif");
+    background-size: contain;
+    position: absolute;
+    left: 320px;
+    top: 560px;
+}
+

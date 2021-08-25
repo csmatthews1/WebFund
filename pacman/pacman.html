@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pacman Clone</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id = "start-dialog">
+		<p>Press Start Game when Ready!</p>
+		<button onclick="startGame()">Start Game</button>
+	</div>
+	<div id="game">
+		<img src="img/pm_banner.png" alt="Pac-Man">
+		<div id='world'></div>
+		<div id='pacman'></div>
+		<div id='pinky'></div>
+		<div id='inky'></div>
+		<div id='clyde'></div>
+		<div id='blinky'></div>
+		<div id = "status-bar">
+			<h1 id='score'>Score: 0</h1>
+			<h1 id='status'>Lives: 3</h1>
+		</div>
+	</div>
+	<audio id="snd-start"">
+		<source src="sounds/beginning.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="snd-death" src="sounds/death.wav"></audio>
+	<audio id="snd-chomp" src="sounds/chomp.wav"></audio>
+	<audio id="snd-eatghost" src="sounds/eatghost.wav"></audio>
+	<audio id="snd-siren" src="sounds/siren.m4a"></audio>	
+	<audio id="snd-chase" src="sounds/chase.m4a"></audio>
+	<audio id="snd-win" src="sounds/win.mp3"></audio>
+	<script src="script.js"></script>
+</body>
+</html>
