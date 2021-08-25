@@ -9,7 +9,7 @@ var world = 	[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
                 [1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1],
                 [1,1,1,2,2,2,1,0,0,0,1,2,2,2,1,1,1],
                 [1,1,1,2,1,2,1,0,0,0,1,2,1,2,1,1,1],
-                [2,2,2,2,1,2,1,1,2,1,1,2,1,2,2,2,2],
+                [2,2,2,2,1,2,1,1,1,1,1,2,1,2,2,2,2],
                 [1,1,1,2,2,2,1,2,2,2,1,2,2,2,1,1,1],
                 [1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1],
                 [1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1],
@@ -325,22 +325,18 @@ function checkDeath()
 			if (pacman.x == pinky.x && pacman.y == pinky.y) {
 				pinky.x = 8;
 				pinky.y = 7;
-				document.getElementById("pinky").style.backgroundImage = "url(img/pinky.gif)";
 			}
 			else if (pacman.x == inky.x && pacman.y == inky.y) {
 				inky.x = 8;
 				inky.y = 7;
-				document.getElementById("inky").style.backgroundImage = "url(img/inky.gif)";
 			}
 			else if (pacman.x == blinky.x && pacman.y == blinky.y) {
 				blinky.x = 8;
 				blinky.y = 7;
-				document.getElementById("blinky").style.backgroundImage = "url(img/blinky.gif)";
 			}
 			else {
 				clyde.x = 8;
-				clyde.y = 7;
-				document.getElementById("clyde").style.backgroundImage = "url(img/clyde.gif)";				
+				clyde.y = 7;				
 			}
 			var audio = document.getElementById("snd-eatghost");
 			audio.play();				
