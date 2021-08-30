@@ -7,7 +7,7 @@ var world = 	[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
                 [1,2,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1],
                 [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1],
                 [1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1],
-                [1,1,1,2,2,2,1,0,0,0,1,2,2,2,1,1,1],
+                [1,1,1,2,2,2,2,0,0,0,2,2,2,2,1,1,1],
                 [1,1,1,2,1,2,1,0,0,0,1,2,1,2,1,1,1],
                 [2,2,2,2,1,2,1,1,1,1,1,2,1,2,2,2,2],
                 [1,1,1,2,2,2,1,2,2,2,1,2,2,2,1,1,1],
@@ -32,11 +32,12 @@ var lives = 3;
 var chaseMode = 0;
 var audio_siren;
 var audio_chase;
-const PELLETS = 164;
+const PELLETS = 165;
 var pelletCount;
 var flashCount= 10;
 var flash = false;
 
+var moveTowardPacman = false;
 var moveInterval = 0;
 var flashInterval = 0;
 
@@ -254,6 +255,9 @@ function moveGhost (x, y)
 	x: 0,
 	y: 0
 	}
+	isLeft = false;
+	isUp = false;
+
 ghost.x = x;
 ghost.y = y;
 
@@ -275,8 +279,38 @@ ghost.y = y;
 	{
 		possibleMoves[3] = 1;
 	}
-		
 
+	//Smarter Ghosts know where PacMan is and chase him
+	if (moveTowardPacman) {
+		if (pacman.x < ghost.x) {
+			isLeft = true;
+		}
+		if (pacman.y < ghost.y) {
+			isUp = true;
+		}
+		if (Math.abs(pacman.x-ghost.x) > Math.abs(pacman.y-ghost.y)) {
+			if(isLeft && possibleMoves[0]) {
+				ghost.x--;
+				return ghost;
+			}
+			else if (!isLeft && possibleMoves[2]) {
+				ghost.x++;
+				return ghost;
+			}
+		}
+		else if (Math.abs(pacman.x-ghost.x) <= Math.abs(pacman.y-ghost.y)) {
+			if(isUp && possibleMoves[1]) {
+				ghost.y--;
+				return ghost;
+			}
+			else if (!isUp && possibleMoves[3]) {
+				ghost.y++;
+				return ghost;
+			}
+		}
+	}
+		
+	//Move randomly for dumb ghosts or if wall is blocking
 	while (moved == 0)
 	{
 		rand = Math.floor(Math.random() * 4); //Pick a random direction;
@@ -433,14 +467,15 @@ function initializeWorld() {
 	world[8][7] = 0;	
 	world[8][8] = 0;
 	world[8][9] = 0;
-	pinky = moveGhost(8,7);
+	pinky = moveGhost(7,8);
 	inky = moveGhost(1, 1);
 	blinky = moveGhost(8,8);
-	clyde = moveGhost(8,9);
+	clyde = moveGhost(9,8);
 	drawGhosts();
 	pacman.x = 8;
 	pacman.y = 13;
 	drawpacman();
-
 }
+
+
 
